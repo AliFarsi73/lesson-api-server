@@ -1,7 +1,6 @@
 const express = require('express');
-const app = express();
-const PORT = process.env.PORT ;
 const path = require('path');
+const app = express();
 
 // برای ساده‌سازی: فعلاً از فایل JSON استفاده می‌کنیم
 const lessons = require('./data/lessons.json');
@@ -20,9 +19,10 @@ app.get('/lessons', (req, res) => {
   res.json(filtered);
 });
 
-// در آینده برای فایل‌های مدیا
 app.use('/media', express.static(path.join(__dirname, 'media')));
 
+// فقط از پورت ارائه‌شده توسط Render استفاده کن
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
