@@ -1,29 +1,69 @@
 [
-    {
-      "id": 1,
-      "level": "A1",
-      "lang": "fa",
-      "german": "Ich bin Ali.",
-      "translation": "من علی هستم.",
-      "image": "https://example.com/images/person1.jpg",
-      "audio": "https://example.com/audio/ich-bin-ali.mp3"
-    },
-    {
-      "id": 2,
-      "level": "A1",
-      "lang": "en",
-      "german": "Ich bin Ali.",
-      "translation": "I am Ali.",
-      "image": "https://example.com/images/person1.jpg",
-      "audio": "https://example.com/audio/ich-bin-ali.mp3"
-    },
-    {
-      "id": 3,
-      "level": "A1",
-      "lang": "uk",
-      "german": "Ich bin Ali.",
-      "translation": "Я Алі.",
-      "image": "https://example.com/images/person1.jpg",
-      "audio": "https://example.com/audio/ich-bin-ali.mp3"
-    }
-  ]
+  {
+    "id": 201,
+    "level": "A1",
+    "lang": "fa",
+    "type": "dialogue-multi-step",
+    "topic": "doctor-office",
+    "scene": "گرفتن نوبت دکتر",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Doctor_clipart.svg/256px-Doctor_clipart.svg.png",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Guten Tag, wie kann ich Ihnen helfen?",
+        "audio": "audio/a1.mp3"
+      },
+      {
+        "speaker": "B",
+        "options": [
+          {
+            "text": "Ich möchte einen Termin, bitte.",
+            "hint": "من می‌خواهم یک وقت ملاقات بگیرم.",
+            "correct": true,
+            "audio": "audio/b1.mp3"
+          },
+          {
+            "text": "Ich esse gern Pizza.",
+            "hint": "من پیتزا دوست دارم.",
+            "correct": false,
+            "audio": "audio/b2.mp3"
+          },
+          {
+            "text": "Wie viel kostet das?",
+            "hint": "این چقدر قیمت دارد؟",
+            "correct": false,
+            "audio": "audio/b3.mp3"
+          }
+        ]
+      },
+      {
+        "speaker": "A",
+        "text": "Was haben Sie für Beschwerden?",
+        "audio": "audio/a2.mp3"
+      },
+      {
+        "speaker": "B",
+        "options": [
+          {
+            "text": "Mein Kopf tut weh.",
+            "hint": "سرم درد می‌کند.",
+            "correct": true,
+            "audio": "audio/b4.mp3"
+          },
+          {
+            "text": "Ich habe ein Auto.",
+            "hint": "من یک ماشین دارم.",
+            "correct": false,
+            "audio": "audio/b5.mp3"
+          },
+          {
+            "text": "Ich bin Lehrer.",
+            "hint": "من معلم هستم.",
+            "correct": false,
+            "audio": "audio/b6.mp3"
+          }
+        ]
+      }
+    ]
+  }
+]
