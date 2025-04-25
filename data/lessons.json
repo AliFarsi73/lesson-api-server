@@ -1,20 +1,22 @@
 [
   {
-    "id": 201,
+    "id": 301,
     "level": "A1",
     "lang": "fa",
     "type": "dialogue-multi-step",
     "topic": "doctor-office",
-    "scene": "گرفتن نوبت دکتر",
+    "scene": "در مطب دکتر",
+    "title": "Beim Arzt",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Doctor_clipart.svg/256px-Doctor_clipart.svg.png",
     "dialogue": [
       {
-        "speaker": "A",
+        "speaker": "منشی",
         "text": "Guten Tag, wie kann ich Ihnen helfen?",
-        "audio": "audio/a1.mp3"
+        "audio": "audio/a1.mp3",
+        "hint": "روز بخیر، چطور می‌تونم کمکتون کنم؟"
       },
       {
-        "speaker": "B",
+        "speaker": "سارا",
         "options": [
           {
             "text": "Ich möchte einen Termin, bitte.",
@@ -27,33 +29,45 @@
             "hint": "من پیتزا دوست دارم.",
             "correct": false,
             "audio": "audio/b2.mp3"
-          },
-          {
-            "text": "Wie viel kostet das?",
-            "hint": "این چقدر قیمت دارد؟",
-            "correct": false,
-            "audio": "audio/b3.mp3"
           }
         ]
       },
       {
-        "speaker": "A",
+        "speaker": "منشی",
         "text": "Was haben Sie für Beschwerden?",
-        "audio": "audio/a2.mp3"
+        "audio": "audio/a2.mp3",
+        "hint": "چه مشکلی دارید؟"
       },
       {
-        "speaker": "B",
+        "speaker": "سارا",
         "options": [
           {
             "text": "Mein Kopf tut weh.",
             "hint": "سرم درد می‌کند.",
             "correct": true,
-            "audio": "audio/b4.mp3"
+            "audio": "audio/b3.mp3"
           },
           {
             "text": "Ich habe ein Auto.",
             "hint": "من یک ماشین دارم.",
             "correct": false,
+            "audio": "audio/b4.mp3"
+          }
+        ]
+      },
+      {
+        "speaker": "منشی",
+        "text": "Wie wäre es mit morgen um 15 Uhr?",
+        "audio": "audio/a3.mp3",
+        "hint": "فردا ساعت ۳ چطوره؟"
+      },
+      {
+        "speaker": "سارا",
+        "options": [
+          {
+            "text": "Das passt gut, danke.",
+            "hint": "خیلی خوبه، ممنون.",
+            "correct": true,
             "audio": "audio/b5.mp3"
           },
           {
