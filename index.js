@@ -30,6 +30,14 @@ app.get('/lessons', (req, res) => {
     return res.status(404).json({ error: 'No matching lesson for this level/lang' });
   }
 });
+app.get('/lesson-list.json', (req, res) => {
+  const filePath = path.join(__dirname, 'data', 'lesson-list.json');
+  if (!fs.existsSync(filePath)) {
+    return res.status(404).json({ error: 'lesson list not found' });
+  }
+  const content = fs.readFileSync(filePath, 'utf-8');
+  return res.json(JSON.parse(content));
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
