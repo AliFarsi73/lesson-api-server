@@ -10,13 +10,13 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Doctor_clipart.svg/256px-Doctor_clipart.svg.png",
     "dialogue": [
       {
-        "speaker": "منشی",
+        "speaker": "A",
         "text": "Guten Tag, wie kann ich Ihnen helfen?",
         "audio": "audio/a1.mp3",
         "hint": "روز بخیر، چطور می‌تونم کمکتون کنم؟"
       },
       {
-        "speaker": "سارا",
+        "speaker": "B",
         "options": [
           {
             "text": "Ich möchte einen Termin, bitte.",
@@ -33,13 +33,13 @@
         ]
       },
       {
-        "speaker": "منشی",
+        "speaker": "A",
         "text": "Was haben Sie für Beschwerden?",
         "audio": "audio/a2.mp3",
         "hint": "چه مشکلی دارید؟"
       },
       {
-        "speaker": "سارا",
+        "speaker": "B",
         "options": [
           {
             "text": "Mein Kopf tut weh.",
@@ -56,13 +56,13 @@
         ]
       },
       {
-        "speaker": "منشی",
+        "speaker": "A",
         "text": "Wie wäre es mit morgen um 15 Uhr?",
         "audio": "audio/a3.mp3",
         "hint": "فردا ساعت ۳ چطوره؟"
       },
       {
-        "speaker": "سارا",
+        "speaker": "B",
         "options": [
           {
             "text": "Das passt gut, danke.",
