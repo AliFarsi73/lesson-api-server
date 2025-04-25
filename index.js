@@ -1,28 +1,34 @@
 const express = require('express');
-const path = require('path');
+const fs = require('fs');
+const cors = require('cors');
 const app = express();
+const PORT = process.env.PORT || 3000;
 
-// برای ساده‌سازی: فعلاً از فایل JSON استفاده می‌کنیم
-const lessons = require('./data/lessons.json');
+app.use(cors());
 
-// مسیر برای دریافت درس‌ها بر اساس سطح و زبان کاربر
 app.get('/lessons', (req, res) => {
-  const { level, lang } = req.query;
-  if (!level || !lang) {
-    return res.status(400).json({ error: 'level and lang are required' });
+  const { topic, level, lang } = req.query;
+
+  if (!topic || !level || !lang) {
+    return res.status(400).json({ error: 'topic, level and lang are required' });
   }
 
-  const filtered = lessons.filter(
-    (lesson) => lesson.level === level && lesson.lang === lang
-  );
+  const filePath = `./data/${topic}.json`;
 
-  res.json(filtered);
+  if (!fs.existsSync(filePath)) {
+    return res.status(404).json({ error: 'Topic not found' });
+  }
+
+  try {
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    const filtered = data.filter(lesson => lesson.level === level && lesson.lang === lang);
+    res.json(filtered);
+  } catch (err) {
+    console.error('Error reading lessons file:', err);
+    res.status(500).json({ error: 'Server error while reading lessons' });
+  }
 });
 
-app.use('/media', express.static(path.join(__dirname, 'media')));
-
-// فقط از پورت ارائه‌شده توسط Render استفاده کن
-const PORT = process.env.PORT;
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server listening on port ${PORT}`);
 });
