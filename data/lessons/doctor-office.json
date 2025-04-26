@@ -6,20 +6,20 @@
   "topic": "doctor-office",
   "scene": "در مطب دکتر",
   "title": "Beim Arzt",
-  "image": "https://i.imgur.com/4t0yE0t.png",
   "dialogue": [
     {
+      "image": "https://i.imgur.com/4t0yE0t.png",
       "speaker": "منشی",
       "text": "Guten Tag, wie kann ich Ihnen helfen?",
-      "audio": "audio/a1.mp3",
-      "hint": "روز بخیر، چطور می‌تونم کمکتون کنم؟"
+      "hint": "روز بخیر، چطور می‌تونم کمکتون کنم؟",
+      "audio": "audio/a1.mp3"
     },
     {
       "speaker": "سارا",
       "options": [
         {
           "text": "Ich möchte einen Termin, bitte.",
-          "hint": "من می‌خواهم یک وقت ملاقات بگیرم.",
+          "hint": "می‌خواهم یک وقت ملاقات بگیرم.",
           "correct": true,
           "audio": "audio/b1.mp3"
         },
@@ -28,54 +28,104 @@
           "hint": "من پیتزا دوست دارم.",
           "correct": false,
           "audio": "audio/b2.mp3"
-        }
-      ]
-    },
-    {
-      "speaker": "منشی",
-      "text": "Was haben Sie für Beschwerden?",
-      "audio": "audio/a2.mp3",
-      "hint": "چه مشکلی دارید؟"
-    },
-    {
-      "speaker": "سارا",
-      "options": [
-        {
-          "text": "Mein Kopf tut weh.",
-          "hint": "سرم درد می‌کند.",
-          "correct": true,
-          "audio": "audio/b3.mp3"
         },
         {
-          "text": "Ich habe ein Auto.",
-          "hint": "من یک ماشین دارم.",
+          "text": "Ich fahre Fahrrad.",
+          "hint": "من دوچرخه سواری می‌کنم.",
           "correct": false,
-          "audio": "audio/b4.mp3"
+          "audio": "audio/b3.mp3"
         }
       ]
     },
     {
       "speaker": "منشی",
-      "text": "Wie wäre es mit morgen um 15 Uhr?",
-      "audio": "audio/a3.mp3",
-      "hint": "فردا ساعت ۳ چطوره؟"
+      "text": "Für welchen Tag brauchen Sie den Termin?",
+      "hint": "برای چه روزی وقت می‌خواهید؟",
+      "audio": "audio/a2.mp3"
     },
     {
       "speaker": "سارا",
       "options": [
         {
-          "text": "Das passt gut, danke.",
-          "hint": "خیلی خوبه، ممنون.",
+          "text": "Für Freitag, bitte.",
+          "hint": "برای جمعه لطفاً.",
           "correct": true,
+          "audio": "audio/b4.mp3"
+        },
+        {
+          "text": "Ich gehe ins Kino.",
+          "hint": "من به سینما می‌روم.",
+          "correct": false,
           "audio": "audio/b5.mp3"
         },
         {
-          "text": "Ich bin Lehrer.",
-          "hint": "من معلم هستم.",
+          "text": "Ich habe Hunger.",
+          "hint": "من گرسنه‌ام.",
           "correct": false,
           "audio": "audio/b6.mp3"
         }
       ]
+    },
+    {
+      "speaker": "منشی",
+      "text": "Passt Ihnen 10 Uhr morgens?",
+      "hint": "ساعت ۱۰ صبح مناسب است؟",
+      "audio": "audio/a3.mp3"
+    },
+    {
+      "speaker": "سارا",
+      "options": [
+        {
+          "text": "Ja, das passt gut.",
+          "hint": "بله، خوبه.",
+          "correct": true,
+          "audio": "audio/b7.mp3"
+        },
+        {
+          "text": "Ich wohne in Berlin.",
+          "hint": "من در برلین زندگی می‌کنم.",
+          "correct": false,
+          "audio": "audio/b8.mp3"
+        },
+        {
+          "text": "Mein Bruder ist Arzt.",
+          "hint": "برادرم دکتر است.",
+          "correct": false,
+          "audio": "audio/b9.mp3"
+        }
+      ]
+    },
+
+    {
+      "image": "https://i.imgur.com/abc1234.png",
+      "speaker": "منشی",
+      "text": "Wie heißen Sie?",
+      "hint": "اسم شما چیست؟",
+      "audio": "audio/a4.mp3"
+    },
+    {
+      "speaker": "سارا",
+      "options": [
+        {
+          "text": "Ich heiße Sara.",
+          "hint": "اسم من سارا است.",
+          "correct": true,
+          "audio": "audio/b10.mp3"
+        },
+        {
+          "text": "Ich habe einen Hund.",
+          "hint": "من یک سگ دارم.",
+          "correct": false,
+          "audio": "audio/b11.mp3"
+        },
+        {
+          "text": "Ich spiele Fußball.",
+          "hint": "من فوتبال بازی می‌کنم.",
+          "correct": false,
+          "audio": "audio/b12.mp3"
+        }
+      ]
     }
+   
   ]
 }
