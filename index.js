@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 
-// گرفتن لیست همه درس‌ها (فقط مشخصات کلی، بدون دیتیل تمرین‌ها)
+// گرفتن لیست کلی دروس
 app.get('/lesson-list', (req, res) => {
   const filePath = path.join(__dirname, 'data', 'lesson-list.json');
   if (!fs.existsSync(filePath)) {
@@ -18,22 +18,22 @@ app.get('/lesson-list', (req, res) => {
   return res.json(JSON.parse(content));
 });
 
-// گرفتن محتوای یک درس کامل
+// گرفتن دیتای یک درس خاص
 app.get('/lessons', (req, res) => {
   const { topic, level, lang } = req.query;
   if (!topic || !level || !lang) {
     return res.status(400).json({ error: 'topic, level, and lang are required' });
   }
 
-  const lessonFile = path.join(__dirname, 'data', 'lessons', `${topic}.json`);
+  const filePath = path.join(__dirname, 'data', 'lessons', `${topic}.json`);
 
-  if (!fs.existsSync(lessonFile)) {
+  if (!fs.existsSync(filePath)) {
     return res.status(404).json({ error: 'Lesson not found' });
   }
 
   try {
-    const content = fs.readFileSync(lessonFile, 'utf8');
-    const lesson = JSON.parse(content);
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const lesson = JSON.parse(fileContent);
 
     if (lesson.level === level && lesson.lang === lang) {
       return res.json([lesson]);
