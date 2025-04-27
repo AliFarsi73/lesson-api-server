@@ -1,0 +1,117 @@
+{
+  "id": 301,
+  "level": "A1",
+  "lang": "fa",
+  "type": "dialogue-multi-step",
+  "topic": "doctor-office",
+  "scene": "در مطب دکتر",
+  "title": "Beim Arzt",
+  "dialogue": [
+    {
+      "image": "https://i.imgur.com/4t0yE0t.png",
+      "speaker": "منشی",
+      "text": "Guten Tag, wie kann ich Ihnen helfen?",
+      "hint": "روز بخیر، چطور می‌توانم کمکتان کنم؟",
+      "audio": "audio/a1.mp3",
+      "options": [
+        {
+          "text": "Ich möchte einen Termin, bitte.",
+          "hint": "من یک وقت ملاقات می‌خواهم.",
+          "correct": true,
+          "audio": "audio/b1.mp3"
+        },
+        {
+          "text": "Ich spiele Fußball.",
+          "hint": "من فوتبال بازی می‌کنم.",
+          "correct": false,
+          "audio": "audio/b2.mp3"
+        },
+        {
+          "text": "Ich esse gern Pizza.",
+          "hint": "من پیتزا دوست دارم.",
+          "correct": false,
+          "audio": "audio/b3.mp3"
+        }
+      ]
+    },
+    {
+      "speaker": "منشی",
+      "text": "Wann möchten Sie kommen?",
+      "hint": "کی می‌خواهید بیایید؟",
+      "audio": "audio/a2.mp3",
+      "options": [
+        {
+          "text": "Morgen um 10 Uhr.",
+          "hint": "فردا ساعت ۱۰.",
+          "correct": true,
+          "audio": "audio/b4.mp3"
+        },
+        {
+          "text": "Ich wohne in Berlin.",
+          "hint": "من در برلین زندگی می‌کنم.",
+          "correct": false,
+          "audio": "audio/b5.mp3"
+        },
+        {
+          "text": "Ich trinke Wasser.",
+          "hint": "من آب می‌نوشم.",
+          "correct": false,
+          "audio": "audio/b6.mp3"
+        }
+      ]
+    },
+    {
+      "image": "https://i.imgur.com/abc1234.png",
+      "speaker": "منشی",
+      "text": "Was sind Ihre Beschwerden?",
+      "hint": "مشکل شما چیست؟",
+      "audio": "audio/a3.mp3",
+      "options": [
+        {
+          "text": "Mein Kopf tut weh.",
+          "hint": "سرم درد می‌کند.",
+          "correct": true,
+          "audio": "audio/b7.mp3"
+        },
+        {
+          "text": "Ich liebe Katzen.",
+          "hint": "من عاشق گربه‌ها هستم.",
+          "correct": false,
+          "audio": "audio/b8.mp3"
+        },
+        {
+          "text": "Ich fahre Fahrrad.",
+          "hint": "من دوچرخه سواری می‌کنم.",
+          "correct": false,
+          "audio": "audio/b9.mp3"
+        }
+      ]
+    },
+    {
+      "speaker": "دکتر",
+      "text": "Wie lange haben Sie die Beschwerden?",
+      "hint": "چقدر است که این علائم را دارید؟",
+      "audio": "audio/a4.mp3",
+      "options": [
+        {
+          "text": "Seit drei Tagen.",
+          "hint": "از سه روز پیش.",
+          "correct": true,
+          "audio": "audio/b10.mp3"
+        },
+        {
+          "text": "Ich bin müde.",
+          "hint": "من خسته هستم.",
+          "correct": false,
+          "audio": "audio/b11.mp3"
+        },
+        {
+          "text": "Ich spiele Gitarre.",
+          "hint": "من گیتار می‌نوازم.",
+          "correct": false,
+          "audio": "audio/b12.mp3"
+        }
+      ]
+    }
+  ]
+}
