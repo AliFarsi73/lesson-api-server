@@ -5,33 +5,18 @@
   "type": "dialogue-multi-step",
   "topic": "shopping",
   "scene": "خرید کردن",
-  "title": "Einkaufen",
+  "title": "Beim Einkaufen",
   "dialogue": [
     {
-      "image": "https://i.imgur.com/xyz1234.png",
+      "image": "https://i.imgur.com/5KZ5qF7.png",
       "speaker": "فروشنده",
-      "text": "Guten Tag, was möchten Sie kaufen?",
-      "hint": "روز بخیر، چه چیزی می‌خواهید بخرید؟",
+      "text": "Was möchten Sie kaufen?",
+      "hint": "چه چیزی می‌خواهید بخرید؟",
       "audio": "audio/s1.mp3",
       "options": [
-        {
-          "text": "Ich möchte Brot kaufen.",
-          "hint": "من می‌خواهم نان بخرم.",
-          "correct": true,
-          "audio": "audio/sb1.mp3"
-        },
-        {
-          "text": "Ich spiele Fußball.",
-          "hint": "من فوتبال بازی می‌کنم.",
-          "correct": false,
-          "audio": "audio/sb2.mp3"
-        },
-        {
-          "text": "Ich trinke Wasser.",
-          "hint": "من آب می‌نوشم.",
-          "correct": false,
-          "audio": "audio/sb3.mp3"
-        }
+        { "text": "Ich möchte Brot kaufen.", "hint": "من می‌خواهم نان بخرم.", "correct": true, "audio": "audio/s2.mp3" },
+        { "text": "Ich spiele Tennis.", "hint": "من تنیس بازی می‌کنم.", "correct": false, "audio": "audio/s3.mp3" },
+        { "text": "Mein Haus ist groß.", "hint": "خانه من بزرگ است.", "correct": false, "audio": "audio/s4.mp3" }
       ]
     }
   ]

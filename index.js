@@ -8,26 +8,37 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// فعال کردن CORS برای همه درخواست‌ها
 app.use(cors());
 
-// Endpoint to get the list of lessons
+// =======================
+// Endpoint برای دریافت لیست درس‌ها
+// =======================
 app.get('/lesson-list', (req, res) => {
   const filePath = path.join(__dirname, 'data', 'lesson-list.json');
+
   if (!fs.existsSync(filePath)) {
-    return res.status(404).json({ error: 'lesson list not found' });
+    return res.status(404).json({ error: 'Lesson list not found' });
   }
-  const content = fs.readFileSync(filePath, 'utf8');
-  return res.json(JSON.parse(content));
+
+  try {
+    const content = fs.readFileSync(filePath, 'utf8');
+    const lessons = JSON.parse(content);
+    return res.json(lessons);
+  } catch (err) {
+    console.error('خطا در خواندن lesson-list:', err);
+    return res.status(500).json({ error: 'Failed to read lesson list file' });
+  }
 });
 
-// Endpoint to get full lesson content
-app.get('/lessons', (req, res) => {
-  const { topic, level, lang } = req.query;
-  if (!topic || !level || !lang) {
-    return res.status(400).json({ error: 'topic, level, and lang are required' });
-  }
+// =======================
+// Endpoint جدید برای دریافت تمرینات هر درس با زبان
+// =======================
+app.get('/lessons/:topic/:lang', (req, res) => {
+  const { topic, lang } = req.params;
 
-  const lessonFile = path.join(__dirname, 'data', 'lessons', `${topic}.json`);
+  const lessonFile = path.join(__dirname, 'data', 'lessons', `${topic}.${lang}.json`);
+
   if (!fs.existsSync(lessonFile)) {
     return res.status(404).json({ error: 'Lesson not found' });
   }
@@ -35,17 +46,16 @@ app.get('/lessons', (req, res) => {
   try {
     const content = fs.readFileSync(lessonFile, 'utf8');
     const lesson = JSON.parse(content);
-
-    if (lesson.level === level && lesson.lang === lang) {
-      return res.json([lesson]);
-    } else {
-      return res.status(404).json({ error: 'No matching lesson for this level/lang' });
-    }
+    return res.json(lesson);
   } catch (err) {
+    console.error('خطا در خواندن فایل درس:', err);
     return res.status(500).json({ error: 'Failed to read lesson file' });
   }
 });
 
+// =======================
+// اجرای سرور
+// =======================
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
