@@ -1,0 +1,37 @@
+{
+  "id": 601,
+  "level": "A2",
+  "lang": "fa",
+  "type": "dialogue-multi-step",
+  "topic": "street",
+  "scene": "در خیابان",
+  "title": "Auf der Straße",
+  "dialogue": [
+    {
+      "speaker": "رهگذر",
+      "text": "Entschuldigung, wo ist der Bahnhof?",
+      "hint": "ببخشید، ایستگاه قطار کجاست؟",
+      "audio": "audio/street1.mp3",
+      "options": [
+        {
+          "text": "Geradeaus und dann rechts.",
+          "hint": "مستقیم و سپس راست.",
+          "correct": true,
+          "audio": "audio/straight.mp3"
+        },
+        {
+          "text": "Ich weiß es nicht.",
+          "hint": "من نمی‌دانم.",
+          "correct": false,
+          "audio": "audio/dontknow.mp3"
+        },
+        {
+          "text": "Ich bin Arzt.",
+          "hint": "من دکتر هستم.",
+          "correct": false,
+          "audio": "audio/doctor.mp3"
+        }
+      ]
+    }
+  ]
+}

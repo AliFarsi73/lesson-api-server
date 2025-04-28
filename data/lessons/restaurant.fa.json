@@ -1,0 +1,37 @@
+{
+  "id": 501,
+  "level": "A2",
+  "lang": "fa",
+  "type": "dialogue-multi-step",
+  "topic": "restaurant",
+  "scene": "در رستوران",
+  "title": "Im Restaurant",
+  "dialogue": [
+    {
+      "speaker": "گارسون",
+      "text": "Möchten Sie die Speisekarte?",
+      "hint": "آیا منو می‌خواهید؟",
+      "audio": "audio/rest1.mp3",
+      "options": [
+        {
+          "text": "Ja, bitte.",
+          "hint": "بله، لطفاً.",
+          "correct": true,
+          "audio": "audio/yes2.mp3"
+        },
+        {
+          "text": "Ich habe keinen Hunger.",
+          "hint": "من گرسنه نیستم.",
+          "correct": false,
+          "audio": "audio/nohunger.mp3"
+        },
+        {
+          "text": "Ich spiele Basketball.",
+          "hint": "من بسکتبال بازی می‌کنم.",
+          "correct": false,
+          "audio": "audio/basketball.mp3"
+        }
+      ]
+    }
+  ]
+}

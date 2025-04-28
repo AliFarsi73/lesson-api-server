@@ -10,5 +10,17 @@
     "scene": "خرید کردن",
     "level": "A1",
     "lang": "fa"
+  },
+  {
+    "topic": "restaurant",
+    "scene": "در رستوران",
+    "level": "A2",
+    "lang": "fa"
+  },
+  {
+    "topic": "street",
+    "scene": "در خیابان",
+    "level": "A2",
+    "lang": "fa"
   }
 ]

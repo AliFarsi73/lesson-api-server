@@ -112,6 +112,32 @@
           "audio": "audio/b12.mp3"
         }
       ]
+    },
+    {
+      "speaker": "دکتر",
+      "text": "Haben Sie Fieber?",
+      "hint": "آیا تب دارید؟",
+      "audio": "audio/a5.mp3",
+      "options": [
+        {
+          "text": "Ja, ich habe Fieber.",
+          "hint": "بله، من تب دارم.",
+          "correct": true,
+          "audio": "audio/b13.mp3"
+        },
+        {
+          "text": "Ich gehe ins Kino.",
+          "hint": "من به سینما می‌روم.",
+          "correct": false,
+          "audio": "audio/b14.mp3"
+        },
+        {
+          "text": "Ich trinke Kaffee.",
+          "hint": "من قهوه می‌نوشم.",
+          "correct": false,
+          "audio": "audio/b15.mp3"
+        }
+      ]
     }
   ]
 }

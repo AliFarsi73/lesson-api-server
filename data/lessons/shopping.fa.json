@@ -1,0 +1,63 @@
+{
+  "id": 401,
+  "level": "A1",
+  "lang": "fa",
+  "type": "dialogue-multi-step",
+  "topic": "shopping",
+  "scene": "خرید کردن",
+  "title": "Einkaufen",
+  "dialogue": [
+    {
+      "speaker": "فروشنده",
+      "text": "Guten Tag! Kann ich Ihnen helfen?",
+      "hint": "سلام! می‌توانم کمکتان کنم؟",
+      "audio": "audio/shop1.mp3",
+      "options": [
+        {
+          "text": "Ja, bitte.",
+          "hint": "بله، لطفاً.",
+          "correct": true,
+          "audio": "audio/yes.mp3"
+        },
+        {
+          "text": "Nein, danke.",
+          "hint": "نه، متشکرم.",
+          "correct": false,
+          "audio": "audio/no.mp3"
+        },
+        {
+          "text": "Ich spiele Fußball.",
+          "hint": "من فوتبال بازی می‌کنم.",
+          "correct": false,
+          "audio": "audio/football.mp3"
+        }
+      ]
+    },
+    {
+      "speaker": "فروشنده",
+      "text": "Was möchten Sie kaufen?",
+      "hint": "چه چیزی می‌خواهید بخرید؟",
+      "audio": "audio/shop2.mp3",
+      "options": [
+        {
+          "text": "Ich möchte Brot.",
+          "hint": "من نان می‌خواهم.",
+          "correct": true,
+          "audio": "audio/bread.mp3"
+        },
+        {
+          "text": "Ich bin müde.",
+          "hint": "من خسته‌ام.",
+          "correct": false,
+          "audio": "audio/tired.mp3"
+        },
+        {
+          "text": "Ich wohne in Berlin.",
+          "hint": "من در برلین زندگی می‌کنم.",
+          "correct": false,
+          "audio": "audio/berlin.mp3"
+        }
+      ]
+    }
+  ]
+}
