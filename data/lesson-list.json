@@ -3,24 +3,28 @@
     "topic": "doctor-office",
     "scene": "در مطب دکتر",
     "level": "A1",
-    "lang": "fa"
+    "lang": "fa",
+    "total": 5
   },
   {
     "topic": "shopping",
     "scene": "خرید کردن",
     "level": "A1",
-    "lang": "fa"
+    "lang": "fa",
+    "total": 4
   },
   {
-    "topic": "restaurant",
+    "topic": "at-school",
+    "scene": "در مدرسه",
+    "level": "A2",
+    "lang": "fa",
+    "total": 6
+  },
+  {
+    "topic": "in-restaurant",
     "scene": "در رستوران",
-    "level": "A2",
-    "lang": "fa"
-  },
-  {
-    "topic": "street",
-    "scene": "در خیابان",
-    "level": "A2",
-    "lang": "fa"
+    "level": "B1",
+    "lang": "fa",
+    "total": 3
   }
 ]
