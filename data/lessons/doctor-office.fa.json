@@ -1,5 +1,5 @@
 {
-  "id": 301,
+  "id": "A101",
   "level": "A1",
   "lang": "fa",
   "type": "dialogue-multi-step",
@@ -8,11 +8,11 @@
   "title": "Beim Arzt",
   "dialogue": [
     {
-      "image": "https://raw.githubusercontent.com/AliFarsi73/GermanAppMedia/main/images/beim-arzt/Screenshot%202025-05-21%20at%2018.15.41.png",
+      "image": "https://raw.githubusercontent.com/AliFarsi73/GermanAppMedia/main/images/A101/Screenshot%202025-05-21%20at%2018.15.41.png",
       "speaker": "منشی",
       "text": "Guten Tag, wie kann ich Ihnen helfen?",
       "hint": "روز بخیر، چطور می‌توانم کمکتان کنم؟",
-      "audio": "audio/a1.mp3",
+      "audio": "https://raw.githubusercontent.com/AliFarsi73/GermanAppMedia/main/audio/A101/A101-1.mp3",
       "options": [
         {
           "text": "Ich möchte einen Termin, bitte.",
